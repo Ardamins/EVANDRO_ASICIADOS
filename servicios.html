@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Evandro & Asociados</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #102d3b; font-family: 'Inter', sans-serif; color: #e6edf0; }
+        .container { max-width: 1300px; margin: 0 auto; padding: 0 30px; }
+        header { background-color: #0a1f28; padding: 18px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #2c5a6e; }
+        .header-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .logo-area { display: flex; align-items: center; gap: 15px; }
+        .logo-img { height: 70px; width: auto; max-width: 70px; object-fit: contain; }
+        .logo-text .main-brand { font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; font-weight: 700; color: #e9c468; }
+        .logo-text .sub-brand { font-size: 0.8rem; font-weight: 500; letter-spacing: 2px; color: #cbd8e0; text-transform: uppercase; }
+        nav ul { display: flex; list-style: none; gap: 32px; }
+        nav ul li a { text-decoration: none; font-weight: 500; color: #d4e2ec; padding-bottom: 5px; border-bottom: 2px solid transparent; }
+        nav ul li a:hover, nav ul li a.active { color: #e9c468; border-bottom-color: #e9c468; }
+        section { padding: 70px 0; }
+        .section-title { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 600; color: #e9c468; margin-bottom: 20px; position: relative; display: inline-block; }
+        .section-title:after { content: ''; position: absolute; bottom: -10px; left: 0; width: 70px; height: 3px; background: #e9c468; }
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px; }
+        .service-card { background: #1a3f4b; padding: 28px 20px; border-radius: 12px; transition: 0.2s; border-left: 5px solid #e9c468; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+        .service-card i { font-size: 2.2rem; color: #e9c468; margin-bottom: 15px; }
+        .service-card h3 { font-size: 1.5rem; font-family: 'Cormorant Garamond', serif; margin-bottom: 10px; }
+        footer { background: #08202a; padding: 40px 0; text-align: center; margin-top: 40px; }
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; border-radius: 50px; padding: 12px 20px; display: flex; align-items: center; gap: 8px; text-decoration: none; z-index: 99; }
+        @media (max-width: 800px) { .header-flex { flex-direction: column; text-align: center; } nav ul { gap: 20px; flex-wrap: wrap; justify-content: center; } .section-title { font-size: 2.2rem; } }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container header-flex">
+        <div class="logo-area">
+            <img src="MIGUELEVANDRO.png" alt="Logo" class="logo-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Crect width=\'100\' height=\'100\' fill=\'%231a2a1f\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23e9c468\' font-size=\'40\'%3EE%26A%3C/text%3E%3C/svg%3E'">
+            <div class="logo-text"><span class="main-brand">E&A</span><span class="sub-brand">EVANDRO & ASOCIADOS</span><span class="sub-brand" style="font-size:0.7rem;">ESTUDIO JURÍDICO</span></div>
+        </div>
+        <nav><ul><li><a href="index.html">Inicio</a></li><li><a href="servicios.html" class="active">Servicios</a></li><li><a href="casos.html">Casos</a></li><li><a href="contacto.html">Contacto</a></li></ul></nav>
+    </div>
+</header>
+<section>
+    <div class="container">
+        <h2 class="section-title">Procesos que llevamos</h2>
+        <div class="service-grid">
+            <div class="service-card"><i class="fas fa-tree"></i><h3>Procesos forestales</h3><p>Asesoría legal en aprovechamiento forestal, sanciones y autorizaciones.</p></div>
+            <div class="service-card"><i class="fas fa-hard-hat"></i><h3>Minería ilegal</h3><p>Defensa especializada frente a fiscalización, interdicción y aspectos penales.</p></div>
+            <div class="service-card"><i class="fas fa-gavel"></i><h3>Procesos penales</h3><p>Estrategia sólida en todas las etapas del proceso penal.</p></div>
+            <div class="service-card"><i class="fas fa-file-contract"></i><h3>Procesos civiles</h3><p>Contratos, propiedad, sucesiones, responsabilidad civil.</p></div>
+            <div class="service-card"><i class="fas fa-building"></i><h3>Administrativos</h3><p>Sancionador y disciplinario. Defensa ante entidades del estado.</p></div>
+            <div class="service-card"><i class="fas fa-chalkboard-user"></i><h3>Gestión Forestal</h3><p>Cumplimiento normativo, planes de manejo y sostenibilidad legal.</p></div>
+        </div>
+    </div>
+</section>
+<footer><div class="container"><p>© 2025 Evandro & Asociados - Estudio Jurídico. Defendemos tus derechos.</p></div></footer>
+<a href="https://wa.me/51942618578" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i> Consulta rápida</a>
+</body>
+</html>
